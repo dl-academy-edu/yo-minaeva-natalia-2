@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    &__menu {
+        margin: 0 auto 0 60px;
+    }
+    &__list {
+        display: flex;
+        font-size: 14px;
+        line-height: 19px;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    & li {
+        margin-right: 21px;
+    }
+    & a {
+        color: #1E0606;
+    }
+    & a:hover {
+        opacity: 50%;
+    }
+    & a:active {
+        opacity: 20%;
+    }
+    &__search {
+        margin-right: 23px;
+    }
+    &__contact-link {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #1E0606;
+        font-size: 14px;
+    }
+}
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    @@include("blocks/header.html")
+
+    <main class="container">
+        <section>
+            <h1>Blog</h1>
+            <a class="breadcrumbs svg" href="/">Home</a> <span class="breadcrumbs grey">Blog</span>
+
+            <ul class="undotted blog-list">
+                @@include('blocks/blog-list.html', {
+                    "img":"img/blog/lego.jpg",
+                    "class":"blog-list-pic1",
+                    "link":"#",
+                    "heading":"Top 5 fastest growing it service companies in philly",
+                    "text":"Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace.",
+                })
+                @@include('blocks/blog-list.html', {
+                    "img":"img/blog/cute-animals.jpg",
+                    "class":"blog-list-pic2",
+                    "link":"#",
+                    "heading":"Best financial",
+                    "text":"Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking."
+                })
+                @@include('blocks/blog-list.html', {
+                    "img":"img/blog/lego-2.jpg",
+                    "class":"blog-list-pic3",
+                    "link":"#",
+                    "heading":"Company logo or brand identity: which one is more important? brand identity",
+                    "text":"To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success."
+                })
+                @@include('blocks/blog-list.html', {
+                    "img":"img/blog/toy-story.jpg",
+                    "class":"blog-list-pic4",
+                    "link":"#",
+                    "heading":"Best financial",
+                    "text":"Direct Line Development is honored to be recognized as one of the Top 100 Fastest Growing Companies 2019 in Philadelphia, according to Growjo’s ranking."
+                })
+                @@include('blocks/blog-list.html', {
+                    "img":"img/blog/rapunzel.jpg",
+                    "class":"blog-list-pic5",
+                    "link":"#",
+                    "heading":"Company logo or brand identity: which one is more important? brand identity",
+                    "text":"To survive in the world of digital marketing, you need to keep up with the latest SEO trends. Here are our simple, but effective, SEO tips for small business success."
+                })
+                @@include('blocks/blog-list.html', {
+                    "img":"img/blog/dice.jpg",
+                    "class":"blog-list-pic6",
+                    "link":"#",
+                    "heading":"Top 5 fastest growing it service companies in philly",
+                    "text":"Direct Line Development’s Team is excited to announce that we received UpCity’s 2019 Local Excellence Award! This prestigious award is annually presented to the Top 1% of service providers in the given marketplace."
+                })
+            </ul>
+        </section>
+
+        <div class="container">
+            <div class="wide-page-list undotted">
+                <a href="#" class="prev-page" aria-label="previous-page"></a>
+                <ul class="page-list undotted">
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                </ul>
+                <a href="#" class="next-page" aria-label="next-page"></a>
+            </div>
+        </div>
+    </main>
+   
+@@include('blocks/footer.html')
+
+</body>
+</html>
