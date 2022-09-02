@@ -1,10 +1,20 @@
 .header {
     display: flex;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 60px;
+    margin: 50px auto 60px;
+    @media screen and (max-width:768px) {
+        justify-content: space-between;
+        margin: 35px auto -90px;
+    }
+    @media screen and (max-width:375px) {
+        justify-content: space-between;
+        margin: 25px auto -90px;
+    }
     &__menu {
         margin: 0 auto 0 60px;
+        @media screen and (max-width:768px) {
+            display: none;
+        }
     }
     &__list {
         display: flex;
@@ -27,14 +37,81 @@
     }
     &__search {
         margin-right: 23px;
+        &_svg {
+            @media screen and (max-width:375px) {
+                width: 13px;
+                height: 13px;
+            }
+        }
     }
     &__contact-link {
         font-weight: bold;
         text-transform: uppercase;
         color: #1E0606;
         font-size: 14px;
+        @media screen and (max-width:768px) {
+            display: none;
+        }
+    }
+    &__logo {
+        @media screen and (max-width:375px) {
+            width: 42px;
+            height: 22px;
+        }
     }
 }
 
+.mobile-menu {
+    @include font(14px,19px);
+    display: none;
+    @media screen and (max-width:768px) {
+        display: block;
+        margin-right: 26px;
+    }
+}
+
+.mobile-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #7D97DACC;
+    z-index: 1;
+
+    &__wrapper {
+        background-color: #FFF;
+    }
+
+    &__list {
+        @include font(16px);
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        flex-direction: column;
+    }
+    & li {
+        margin-right: 21px;
+    }
+    & a {
+        color: #1E0606;
+    }
+    & a:hover {
+        opacity: 50%;
+    }
+    & a:active {
+        opacity: 20%;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 30px 0;
+    }
+}
+
+.header-open {
+    display: block;
+}
 
 

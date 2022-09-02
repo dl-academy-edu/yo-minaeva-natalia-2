@@ -3,6 +3,10 @@ var popupBtn = document.querySelector('.banner-js');
 var popupClose = document.querySelector('.popup-close');
 var input = popup.querySelector('#input-name');
 
+var mobileMenu = document.querySelector('.mobile-menu');
+var mobileClose = document.querySelector('.mobile-header__close');
+var mobileHeader = document.querySelector('.mobile-header');
+
 popupBtn.addEventListener('click',function() {
     popup.classList.add('popup-open');
     input.focus();
@@ -18,4 +22,13 @@ window.addEventListener('keydown',function(event) {
         popup.classList.remove('popup-open');
         popupBtn.focus();
     }
+})
+
+
+mobileMenu.addEventListener('click',function() {
+    mobileHeader.classList.add('header-open');
+})
+
+mobileClose.addEventListener('click',function() {
+    mobileHeader.classList.remove('header-open');
 })

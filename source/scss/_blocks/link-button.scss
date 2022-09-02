@@ -1,5 +1,5 @@
 .link-button {
-    font-weight: 700;
+    @include font (16px,22px,700);
     color: #fff;
     background: #000;
     padding: 9px 22px;
@@ -7,6 +7,11 @@
     text-transform: uppercase;
     cursor: pointer;
     border: none;
+    transition: .4s;
+    @media screen and (max-width:375px) {
+       @include font(14px,19px);
+       padding: 8px 19px; 
+    }
 }
 
 .link-button:hover {
