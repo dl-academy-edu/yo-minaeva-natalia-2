@@ -36,7 +36,7 @@
             
         </section>
 
-        <section class="category-products mobile-container">
+        <section class="category-products">
             <h2 class="category-title">Category Products</h2>
             <ul class="category-list-main undotted">
                 <li class="category-1">
@@ -66,7 +66,12 @@
         </section>
 
         <section class="delivery-info mobile-container">
-            <img src="img/woman.jpg" class="image-left" alt="woman">
+            <picture>
+                <source srcset="img/woman/woman-mobile.jpg, img/woman/woman-mobile2x.jpg 2x" media="(max-width: 500px)">
+                <source srcset="img/woman/woman-tablet.jpg, img/woman/woman-tablet2x.jpg 2x" media="(max-width: 984px)">
+                <source srcset="img/woman/woman-desktop.jpg, img/woman/woman-desktop2x.jpg 2x">
+                <img srcset="img/woman/woman-desktop.jpg, img/woman/woman-desktop2x.jpg 2x" class="image-left" alt="woman">
+            </picture>
             <div class="next-to-image">
                 <h2 class="next-to-image-title">Delivery</h2>
                 <ul class="undotted next-to-image-li">

@@ -1,9 +1,13 @@
 .stars {
     display: flex;
-    width: 98px;
-    flex-direction: row-reverse;
-    position: relative;
     height: 20px;
+    @media screen and (min-width:641px) and (max-width:900px) {
+        margin-top: 13px;
+        margin-bottom: 33px;
+    }
+    @media screen and (min-width:901px) {
+        width: 30%;
+    }
 }
 
 .svg1, .svg2, .svg3, .svg4, .svg5 {
@@ -21,10 +25,12 @@
 .stars:not(:checked) > label {
 	fill: #FFF;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .stars > input:checked ~ label {
-    fill: #C29974
+    fill: #C29974;
+    margin-top: 20px;
 }
 
 .stars > label {
@@ -45,9 +51,8 @@
 }
 
 .rating-title {
-    position: absolute;
-    top: -20px;
-    left: -150px;
+    width: 126px;
+    margin-right: 27px;
 }
 
 .stars:hover > .rating-title {
@@ -55,8 +60,8 @@
     cursor: pointer;
 }
 
-// .stars > input:checked ~ .rating-title {
-//     color: green;
-// }
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@media screen and (max-width:375px) {
+    .rating-title {
+        margin-right: 29px;
+    }
+}

@@ -8,22 +8,30 @@
     border-bottom: #666666;
     border-width: 1px;
     border-bottom-style: solid;
-    @media screen and (max-width:375px) {
+    @media screen and (max-width:640px) {
       flex-wrap: wrap;
-      padding-left: 11px;
+      padding-left: 20px;
     }
   }
   &__bottom {
     display: flex;
+    justify-content: space-between;
+    @media screen and (min-width:641px) and (max-width:900px) {
+      display: block;
+      padding-bottom: 100px;
+    }
   }
   &__bottom-line {
     color: #fff;
     margin-bottom: 100px;
+    @media screen and (min-width:641px) and (max-width:900px) {
+      margin-bottom: 0;
+    }
   }
   & a {
     color: #fff;
     margin-top: 17px;
-    @media screen and (max-width:375px) {
+    @media screen and (max-width:640px) {
       @include font(14px,19px);
       margin-bottom: 59px;
     }
@@ -35,11 +43,39 @@
     padding: 7px 0 7px 20px;
     width: 79%;
   }
+  &__last-elements {
+    @media screen and (min-width:641px) and (max-width:900px) {
+      display: flex;
+      margin-top: -18px;
+    }
+    @media screen and (min-width:901px) {
+      display: flex;
+      width: 66%;
+    }
+  }
+  &__last-elements p {
+    @media screen and (min-width:901px) {
+      width: 100%;
+    }
+  }
+  &__last-elements a {
+    @media screen and (min-width:901px) {
+      width: 100%;
+      margin-left: 3%;
+    }
+  }
+}
+
+.stars, .footer__bottom-line {
+  width: 380px;
+  @media screen and (max-width:640px) {
+    width: 100%;
+  }
 }
 
 .column {
   width: 380px;
-  @media screen and (max-width:375px) {
+  @media screen and (max-width:640px) {
     width: 100%;
   }
   &__title {
@@ -49,9 +85,13 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
     padding-bottom: 23px;
-    @media screen and (max-width:375px) {
+    @media screen and (max-width:640px) {
       margin: 70px auto 40px;
     }
+    @media screen and (min-width:641px) and (max-width:1320px) {
+      margin: 80px auto 52px;
+    }
+    
   }
   &__links {
     padding-bottom: 20px;
@@ -62,7 +102,7 @@
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:640px) {
   .column li {width:49%;
   }
   .li2 {
@@ -94,14 +134,12 @@
     width:72%
   }
   .footer__bottom {
-    margin-left: 11px;
+    padding-left: 20px;
     display: block;
     padding-bottom: 70px;
   }
   .stars {
-    width: 100%;
-    align-items: center;
-    margin: 26px 0px 0px 150px;
+    margin: 7px 0 34px 0px;
   }
   .footer__bottom a {
     font-size: 16px;
@@ -136,8 +174,7 @@
 }
 
 .copyright {
-  margin-right: 109px;
-  @media screen and (max-width:375px) {
+  @media screen and (max-width:640px) {
     margin-right: 0;
     margin-bottom: 15px;
   }
