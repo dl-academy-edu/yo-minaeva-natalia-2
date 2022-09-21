@@ -66,7 +66,7 @@
   background-color: #D6CAC2;
   width: 31px;
   height: 3px;
-  @media screen and (max-width:650px) {
+  @media screen and (max-width:666px) {
     left:auto;
     right: 5%;
     width: 27px;
@@ -113,7 +113,7 @@
   width: 61px;
   height: 74px;
   background-repeat: no-repeat;
-  @media screen and (max-width:650px) {
+  @media screen and (max-width:666px) {
     right: 7%;
     left: auto;
     width: 49px;
@@ -144,7 +144,7 @@
   @media screen and (min-width:941px) and (max-width:1165px) {
     width: 60%;
   }
-  @media screen and (min-width:564px) and (max-width:940px) {
+  @media screen and (min-width:667px) and (max-width:940px) {
     width: 65%;
   }
   @media screen and (min-width:1165px) {
@@ -1172,7 +1172,7 @@ iframe {
   
 }
 
-@media screen and (min-width:650px) and (max-width:940px) {
+@media screen and (min-width:667px) and (max-width:940px) {
    .button-slider1, .button-slider2, .button-slider3, .button-slider4 {
     left: 0;
     width: 27px;
@@ -1214,4 +1214,264 @@ iframe {
   margin-top: 49px;
   box-shadow: 0px 0px 20px 0px #00000033;
   border-radius: 4%;
+}
+
+
+
+// GRID!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.italic {
+  font-style: italic;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 215px);
+  margin-top: 35px;
+  margin-bottom: -5%;
+  font-family: 'Lato', 'Gill Sans', sans-serif;
+  &__box_1, &__box_2, &__box_3, &__box_4, &__box_5, &__box_6, &__box_7, &__box_8, &__box_9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__box {
+    &_1 {
+      grid-column: 1/3;
+      grid-row: 1/3;
+      background: #fff;
+    }
+    &_2 {
+      background: #F7F8FA;
+      grid-column: 3/5;
+      grid-row: 1/3;
+      flex-direction: column;
+    }
+    &_3 {
+      background: #EF5539;
+      grid-column: 1/2;
+      grid-row: 3/5;
+      flex-direction: column;
+    }
+    &_4 {
+      grid-column: 2/4;
+      grid-row: 3/5;
+    }
+    &_5 {
+      background: #8F75BC;
+      grid-row: 3/7;
+      grid-column: 4/5;
+      flex-direction: column;
+    }
+    &_6 {
+      flex-direction: column;
+      grid-row: 5/7;
+      grid-column: 1/3;
+      background-color: #93B7B7;
+    }
+    &_7 {
+      grid-column: 3/4;
+      grid-row: 5/7;
+      background: #F7F8FA;
+      flex-direction: column;
+    }
+    &_8 {
+      grid-column: 1/2;
+      grid-row: 7/8;
+      flex-direction: column;
+      background: #F7F8FA;
+    }
+    &_9 {
+      background: #2C2C2C;
+      grid-column: 2/5;
+      grid-row: 7/8;
+    }
+  }
+}
+
+
+.info1 {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  margin-left: -15%;
+  margin-top: -3%;
+}
+
+.box1 {
+  &_p1 {
+    color: $grey-text;
+    @include font(12px,14px);
+    margin-left: -73px;
+  }
+  &_a1 {
+    @include font (22px,26px);
+    color: $text;
+    margin-left: -73px;
+    width: 100%;
+  }
+  &_a2 {
+    color: $grey-text;
+    @include font (14px,17px);
+    margin-top: 21px;
+    margin-left: -73px;
+  }
+  &_img {
+    margin-top: 84px;
+    margin-right: -183px;
+  }
+}
+
+.box2 {
+  &_a1 {
+    color: $grey-text;
+    @include font(12px,14px);
+  }
+  &_a2 {
+    @include font(48px,58px);
+    color: $text;
+    width: 60%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  &_a3 {
+    color: $blue;
+    @include font (14px,17px);
+    text-decoration: underline;
+  }
+}
+
+.box3 {
+  &_a1 {
+    color: #FFF;
+    @include font(22px,26px);
+    width: 44%;
+    text-align: center;
+  }
+  &_a2 {
+    color: #FFC80A;
+    @include font(12px,14px);
+  }
+}
+
+.box4 {
+  &_p1 {
+    @include font(12px,14px);
+    color: $grey-text;
+    margin-left: 27%;
+    margin-top: 29%;
+  }
+  &_img {
+    margin-top: 14%;
+  }
+  &_a1 {
+    color: $text;
+    @include font(22px,26px);
+  }
+  &_p2 {
+    width: 45%;
+    margin-left: 27%;
+  }
+  &_p3 {
+    color: $grey-text;
+    @include font(14px,17px);
+    width: 65%;
+    margin-top: -18%;
+    margin-left: 7%;
+  }
+  &_a2 {
+    @include font(12px,14px);
+    color: $blue;
+    margin-left: 7%;
+  }
+}
+
+.box5 {
+  &_a1 {
+    @include font(32px,38px);
+    color: #fff;
+  }
+  &_p1 {
+    color: #FFF;
+    @include font(14px,17px);
+    width: 63%;
+    text-align: center;
+  }
+  &_link-btn {
+    color: $text;
+    font-family: 'Lato','Gill Sans',sans-serif;
+    background: #FFC80C;
+    padding: 19px 41px;
+    border: none;
+    border-radius: 35px;
+    @include font(12px,14px);
+  }
+}
+
+.box6 {
+  &_button-6 {
+    background: #FA684F;
+    color: #FFF;
+    @include font(8px,10px);
+    padding: 3px 5px;
+    border: none;
+    border-radius: 3px;
+    position: absolute;
+    width: 65px;
+    top: 31px;
+    left: 0;
+  }
+  &_a1 {
+    @include font(22px,26px);
+    color: #FFF;
+  }
+  &_div {
+    width: 30%;
+    text-align: center;
+    margin-left: 35%;
+    position: absolute;
+    top: 77px;
+    left: 0px;
+  }
+  &_info-6 {
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-top: -22px;
+    position: relative;
+  }
+  &_info-6-1 {
+    position: relative;
+  }
+  &_img {
+    margin-top: 25.2%;
+  }
+}
+
+.box7 {
+  &_a1 {
+    @include font(22px,26px);
+    color: $text;
+  }
+  &_a2 {
+    color: $blue;
+    @include font (12px,14px);
+  }
+}
+
+.box8 {
+  &_a2 {
+    @include font(22px,26px);
+    color: $text;
+  }
+}
+
+.box9 {
+  &_a1 {
+    @include font(22px,26px);
+    color: #FFF;
+    width: 21%;
+    margin-left: 8%;
+    margin-right: 8%
+  }
 }
