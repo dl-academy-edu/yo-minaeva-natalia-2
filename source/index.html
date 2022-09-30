@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Main page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/common.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/heart.png">
 </head>
 
 <body>
@@ -17,17 +18,17 @@
 
     <main class="container">
         <section class="banner">
-            <div class="banner-wrapper">
+            <div class="banner__wrapper">
                 <button aria-label="slider-1" class="button-slider1"></button>
                 <button aria-label="slider-2" class="button-slider2"></button>
                 <button aria-label="slider-3" class="button-slider3"></button>
                 <button aria-label="slider-4" class="button-slider4"></button>
-                <div class="banner-noimg">
+                <div class="banner-noimg mobile-container">
                     <h1 class="banner-title">THE OOH NOO COLLECTION</h1>
-                    <p>Designed in Slovenia</p>
+                    <p class="crimson-italic">Designed in Slovenia</p>
                     <button class="button banner-js">EXPLORE NOW</button>
                 </div>
-                <img src="img/monster.png" class="banner-img" alt="monster" width="635" height="461">
+                <img src="img/monster.png" class="banner-img" alt="Monster, collectible toy">
             </div>
             <div class="underbanner-line">
                 Free (continental) USA shipping on all orders of $100 USD or more!
@@ -39,16 +40,24 @@
             <h2 class="category-title">Category Products</h2>
             <ul class="category-list-main undotted">
                 <li class="category-1">
-                    <a href="#">APPAREL<br>KIDS</a> 
+                    <div class="mobile-category1">
+                        <a href="#"><span>APPAREL</span> <span>KIDS</span></a> 
+                    </div>
                 </li>
                 <li class="category-2">
-                    <a href="#">HOLIDAY<br>SHOP</a>
+                    <div class="mobile-category2">
+                        <a href="#">HOLIDAY SHOP</a>
+                    </div>
                 </li>
                 <li class="category-3">
-                    <a href="toys.html">TOYS</a>
+                    <div class="mobile-category3">
+                        <a href="toys.html">TOYS</a>
+                    </div>
                 </li>         
                 <li class="category-4">
-                    <a href="#">ACCESSORIES</a> 
+                    <div class="mobile-category-4">
+                        <a href="#">ACCESSORIES</a>
+                    </div> 
                 </li>
             </ul>
             <button aria-label="previous"><img src="img/button-left.png" alt=""></button>
@@ -56,8 +65,13 @@
             <p class="category-text">Modern finds for the modern home. Curated goods by unique designers around the world from fashion to furniture for kids and adults.</p>
         </section>
 
-        <section>
-            <img src="img/woman.jpg" class="image-left" alt="woman" width="480" height="559">
+        <section class="delivery-info mobile-container">
+            <picture>
+                <source srcset="img/woman/woman-mobile.jpg, img/woman/woman-mobile2x.jpg 2x" media="(max-width: 500px)">
+                <source srcset="img/woman/woman-tablet.jpg, img/woman/woman-tablet2x.jpg 2x" media="(max-width: 984px)">
+                <source srcset="img/woman/woman-desktop.jpg, img/woman/woman-desktop2x.jpg 2x">
+                <img srcset="img/woman/woman-desktop.jpg, img/woman/woman-desktop2x.jpg 2x" class="image-left" alt="Woman telling an increadible story">
+            </picture>
             <div class="next-to-image">
                 <h2 class="next-to-image-title">Delivery</h2>
                 <ul class="undotted next-to-image-li">
@@ -84,16 +98,16 @@
             <h2 class="hidden-title">Partners</h2>
             <ul class="undotted partners-list">
                 <li>
-                    <img src="img/partners/mail.png" alt="mail" width="193" height="60">
+                    <img class="partner1" src="img/partners/mail.png" alt="mail">
                 </li>
                 <li>
-                    <img src="img/partners/apple.png" alt="apple" width="179" height="61">
+                    <img class="partner2" src="img/partners/apple.png" alt="apple">
                 </li>
                 <li>
-                    <img src="img/partners/eltex.png" alt="eltex" width="216" height="46">
+                    <img class="partner3" src="img/partners/eltex.png" alt="eltex">
                 </li>
                 <li>
-                    <img src="img/partners/owox.png" alt="owox" width="211" height="40">
+                    <img class="partner4" src="img/partners/owox.png" alt="owox">
                 </li>
             </ul>
         </section>
@@ -111,13 +125,12 @@
             <div class="contacts-wrapper">
                 <h2 class="info-title">Contacts</h2>
                 <p class="contacts-text">Some days i feel like i've been working on dlk my entire life and there are other days that i am completely shocked that four years have flown by. It's simply magical.</p>
-                <iframe aria-label="location-map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3df3d26ed30a2556f1a1ae0080981d094e7804772307dc6f560bd591d382d2eb&amp;source=constructor" width="483" height="196" frameborder="0"></iframe>
-            </div>
-
-                
+                <iframe aria-label="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6307.306423760927!2d-122.42025382243547!3d37.77472885318309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809be90f0637%3A0xd558ef250f4addf9!2sBill%20Graham%20Civic%20Auditorium!5e0!3m2!1sen!2sru!4v1663330291551!5m2!1sen!2sru" width="483" height="196" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>        
         </section>
     </main>
-    
+
 @@include('blocks/footer.html')
 
     <section class="popup">

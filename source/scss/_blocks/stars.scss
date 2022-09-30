@@ -1,0 +1,67 @@
+.stars {
+    display: flex;
+    height: 20px;
+    @media screen and (min-width:641px) and (max-width:900px) {
+        margin-top: 13px;
+        margin-bottom: 33px;
+    }
+    @media screen and (min-width:901px) {
+        width: 30%;
+    }
+}
+
+.svg1, .svg2, .svg3, .svg4, .svg5 {
+    margin-right: -1px;
+}
+
+.svg5 {
+    margin-right: 0;
+}
+
+#star-1, #star-2, #star-3, #star-4, #star-5 {
+    display: none;
+}
+
+.stars:not(:checked) > label {
+	fill: #FFF;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.stars > input:checked ~ label {
+    fill: #C29974;
+    margin-top: 20px;
+}
+
+.stars > label {
+    padding-right: 3px;
+}
+
+.stars > input:checked + label:hover,
+.stars > input:checked + label:hover ~ label,
+.stars > input:checked ~ label:hover,
+.stars > input:checked ~ label:hover ~ label,
+.stars > label:hover ~ input:checked ~ label {
+	fill: #836E5B;
+}
+
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label {
+	fill: #836E5B;
+}
+
+.rating-title {
+    width: 126px;
+    margin-right: 27px;
+}
+
+.stars:hover > .rating-title {
+    color: #C29974;
+    cursor: pointer;
+}
+
+@media screen and (max-width:375px) {
+    .rating-title {
+        margin-right: 29px;
+    }
+}

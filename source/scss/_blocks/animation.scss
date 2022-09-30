@@ -1,0 +1,238 @@
+@keyframes car1 {
+    from {
+        left: -15%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes car2 {
+    from {
+        left: -15%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes car3 {
+    from {
+        left: -15%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes car4 {
+    from {
+        left: -15%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes woman-speaks {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity:100%;
+    }
+    
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes man-speaks1 {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 100%
+    }
+    100% {
+        opacity:0
+    }
+}
+
+@keyframes taxi {
+    0% {
+        right: -70%
+    }
+    50% {
+        right: -5%;
+    }
+    100% {
+        right: 140%
+    }
+}
+
+@keyframes driver {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 100%
+    }
+    100% {
+        opacity:0
+    }
+}
+
+@keyframes man-speaks2 {
+    0% {
+        opacity: 0
+    }
+    50% {
+        opacity: 100%
+    }
+    100% {
+        opacity:0
+    }
+}
+
+@keyframes hand-rise {
+    50% {
+        bottom: 37%;
+        left: 19.5%;
+        margin: 0;
+        transform: rotate(0deg);
+        transform-origin: .5% 101%;
+    }
+    100% {
+        bottom: 41%;
+        left: 20.5%;
+        transform: rotate(146deg);
+        transform-origin: 0.5% 101%;
+        margin: 0;
+    }
+}
+
+.animation-title {
+    @include font(36px,44px,700);
+    margin-bottom: 10px;
+}
+
+.anim-container {
+    max-width: 1400px;
+    margin: 3px auto 68px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.city {
+    position: relative;
+    &__pic {
+        margin-left: -119px;
+    }
+    &__clouds {
+        margin-left: 56px;
+        margin-top: 46px;
+    }
+}
+
+.grey-lantern1, .grey-lantern2, .colorful-lantern, .car1, .car2, .car3, .car4, .woman-suitcases, .woman, .man, .arm2, .taxi, .woman-speaks, .man-speaks1, .driver, .man-speaks2 {
+    position: absolute;
+}
+
+
+.grey-lantern1 {
+    left: 30.3%;
+    bottom: 200px;
+}
+
+.grey-lantern2 {
+    right: -6.3%;
+    bottom: 200px;
+}
+
+.colorful-lantern {
+    bottom: 5%;
+    right: 9.7%;
+}
+
+.car1 {
+    bottom: 29.5%;
+    left: -20%;
+    animation: car1 6s linear infinite;
+}
+
+.car2 {
+    bottom: 30%;
+    left: -20%;
+    animation: car2 6s 2s linear infinite;
+}
+
+.car3 {
+    bottom: 32.1%;
+    left: -20%;
+    animation: car3 6s 4s linear infinite;
+}
+
+.car4 {
+    bottom: 28.2%;
+    left: -20%;
+    animation: car4 6s 6s linear infinite;
+}
+
+.woman {
+    bottom: 5%;
+    left: 11.7%;
+}
+
+.woman-suitcases {
+    bottom: 5%;
+    left: 11%;
+}
+
+.man {
+    bottom: 5%;
+    left: 19.6%;
+}
+
+.arm2 {
+    bottom: 41%;
+    left: 20.5%;
+    transform: rotate(146deg);
+    transform-origin: 0.5% 101%;
+    margin: 0;
+    animation: hand-rise 6s 8s;
+}
+
+.taxi {
+    bottom: 12%;
+    right: -70%;
+    animation: taxi 15s 10s;
+}
+
+.woman-speaks {
+    bottom: 38%;
+    left: 4.8%;
+    opacity: 0%;
+    animation: woman-speaks 3s 4s;
+}
+
+.man-speaks1 {
+    bottom: 48.5%;
+    left: 18.6%;
+    opacity: 0%;
+    animation: man-speaks1 3s 8s;
+}
+
+.driver {
+    bottom: 38%;
+    right: 25%;
+    opacity: 0;
+    animation: driver 3s 16s;
+}
+
+.man-speaks2 {
+    bottom: 48.5%;
+    left: 18.6%;
+    opacity: 0%;
+    animation: man-speaks2 3s 22s linear;
+}
